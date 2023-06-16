@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0; 
+}
+
+.main-container {
+    margin-left: 25%;
+    margin-top: 120px;
+    margin-right: 50px;
+    max-width: 50%;
+}
+
+.navheader {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 5em;
+    background-image: url("./img/pawel-czerwinski-I5A7oW933yE-unsplash.jpg");
+    justify-content: right;
+    border-bottom: 2px solid #8aafd1;
+
+}
+.navheader nav ul{
+    display: flex;
+    list-style: none;
+}
+
+
+nav li {
+    color: #056192;
+    font-size: 22px;
+    margin: 10px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.navheader nav {
+    display: flex;
+    align-items: center;;
+}
+
+.about {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.about p {
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+.about h1 {
+    padding-right: 10px;
+    color: #056192;
+    font-size: 50px;
+    margin-right: 40px;
+}
+
+.work {
+    display: flex;
+    margin-top: 20px;
+}
+
+.work h1 {
+    padding-right: 10px;
+    color: #056192;
+    font-size: 50px;
+    margin-right: 60px;
+}
+
+.work-content1 {
+    background-image: url("./img/efe-kurnaz-RnCPiXixooY-unsplash\ \(2\).jpg");
+    height: 800px;
+    width: 830px;
+    margin-left: 30px;
+    border: 10px solid turquoise;
+    filter: blur(2px);
+}
+
+
+.work-content1:hover {
+    cursor: pointer;
+    filter: blur(0);
+}
+
+.work-content2 {
+    background-image: url("./img/tony-reid-PGdMhonLLZk-unsplash.jpg");
+    height: 120px;
+    width: 400px;
+    margin: 15px 0 0 30px;
+    border: 10px solid turquoise;
+}
+
+.work-content3 {
+    background-image: url("./img/tony-reid-PGdMhonLLZk-unsplash.jpg");
+    height: 120px;
+    width: 400px;
+    margin: 15px 0 0 30px;
+    border: 10px solid turquoise;
+}
+.work-content4 {
+    background-image: url("./img/tony-reid-PGdMhonLLZk-unsplash.jpg");
+    height: 120px;
+    width: 400px;
+    margin: 15px 0 0 30px;
+    border: 10px solid turquoise;
+}
+.work-content5 {
+    background-image: url("./img/tony-reid-PGdMhonLLZk-unsplash.jpg");
+    height: 120px;
+    width: 400px;
+    margin: 15px 0 0 30px;
+    border: 10px solid turquoise;
+}
+
+.w-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    border-left: 8px solid hsl(39, 100%, 50%);
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      rgb(255, 0, 0), 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+
+.p-container {
+    border-left: 8px solid hsl(39, 100%, 50%);
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      red, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+
+.contact {
+    display: flex;
+    margin-top: 60px;
+    max-width: 100%;
+}
+
+.contact h1 {
+    padding-right: 10px;
+    font-size: 50px;
+    color: #056192;
+}
+
+.c-container {
+    display: flex;
+    flex-direction: column;
+    border-left: 8px solid hsl(39, 100%, 50%);
+    max-width: 100%;
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      red, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+
+.c-container a {
+    margin: 0 0 15px 1em;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1284px) {
+    .main-container {
+        width: 100%;
+        margin-left: 5%;
+    }
+}
+
+
+
