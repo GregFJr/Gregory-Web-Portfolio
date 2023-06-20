@@ -4,10 +4,8 @@
 }
 
 .main-container {
-    margin-left: 25%;
-    margin-top: 120px;
-    margin-right: 50px;
-    max-width: 50%;
+    margin: 10% 0 0 2%;
+    max-width: 100%;
 }
 
 .navheader {
@@ -17,7 +15,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 5em;
+    height: 8em;
     background-image: url("./img/pawel-czerwinski-I5A7oW933yE-unsplash.jpg");
     justify-content: right;
     border-bottom: 2px solid #8aafd1;
@@ -31,7 +29,7 @@
 
 nav li {
     color: #056192;
-    font-size: 22px;
+    font-size: 2em;
     margin: 10px;
     font-weight: 600;
     text-decoration: underline;
@@ -176,10 +174,49 @@ li:hover {
     text-decoration: none;
 }
 
-@media screen and (max-width: 1284px) {
-    .main-container {
+@media screen and (max-width: 768px) {
+    .work {
+        flex-direction: column;
+    }
+
+    .about {
+        flex-direction: column;
+
+    }
+
+    .navheader {
+        position: static;
+    }
+
+    .p-container {
+        border: none;
+        border-image: none;
+        border-top: 8px solid red;
+    }
+
+    .p-container p {
+        padding: 2% 0 0 0;
+    }
+
+    .w-container {
         width: 100%;
-        margin-left: 5%;
+        border: none;
+        border-image: none;
+        border-top: 8px solid red;
+        max-width: 100%;
+    }
+
+    .work-content1,
+    .work-content2,
+    .work-content3,
+    .work-content4,
+    .work-content5 {
+        width: 100%;
+        margin: 0 0 2% 0;
+    }
+
+    .work-content1 {
+        padding: 5% 0 0 0;
     }
 }
 
