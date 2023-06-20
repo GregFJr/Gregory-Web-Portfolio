@@ -175,6 +175,10 @@ li:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .main-container{
+        margin: 5% 2% 0 2%;
+    }
+
     .work {
         flex-direction: column;
     }
