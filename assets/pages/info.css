@@ -4,12 +4,14 @@
 }
 
 body {
-    background-image: url('../img/kiwihug-3gifzboyZk0-unsplash.jpg');
+    background-color: #a0512de5;
+    background-image: url('https://www.transparenttextures.com/patterns/dark-leather.png');
 }
 
 header {
     width: 100%;
-    background-image: url("../img/banner-1571858.jpg");
+    background-image: url("../img/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg");
+    background-size: cover;
     border-bottom: 1px solid black;
 }
 
@@ -39,6 +41,11 @@ img {
     text-decoration: none;
     font-family: 'Bootstrap-icons';
     margin: 1em;
+    transition: transform 0.5s;
+}
+
+.links a:hover {
+    transform: translateY(-10px);
 }
 
 .message {
@@ -49,3 +56,36 @@ img {
 
 } 
 
+footer {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+footer p {
+    margin: 1% 1%;
+}
+
+footer p::before {
+    content: "@"
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .links {
+        flex-flow: nowrap row;
+        justify-content: center;
+    }
+
+    .message {
+        border-left: none;
+        border-top: 2px solid black;
+    }
+}

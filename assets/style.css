@@ -4,45 +4,49 @@
 }
 
 .main-container {
-    margin: 10% 0 0 2%;
+    margin: 5% 0 0 2%;
     max-width: 100%;
 }
-
+/*---------------------------HEADER-------------------------------------------------------*/
 .navheader {
     display: flex;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 8em;
-    background-image: url("./img/pawel-czerwinski-I5A7oW933yE-unsplash.jpg");
-    justify-content: right;
+    justify-content: space-between;
+    align-items: flex-end;
     border-bottom: 2px solid #8aafd1;
+    background-image: url(./img/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg);
+    background-size: cover;
+    color: black;
 
 }
-.navheader nav ul{
+
+.navheader h1 {
+    font-size: 3em;
+    margin-left: 2px;
+}
+
+.navheader ul{
     display: flex;
     list-style: none;
+    margin: 0;
 }
 
-
-nav li {
-    color: #056192;
+nav a {
+    color: black;
     font-size: 2em;
-    margin: 10px;
+    margin: 0 10px;
     font-weight: 600;
-    text-decoration: underline;
+    text-decoration: none;
 }
+
 
 li:hover {
     cursor: pointer;
 }
 
-.navheader nav {
-    display: flex;
-    align-items: center;;
-}
+
+/*--------------------------ABOUT SECTION---------------------------------------------*/
 
 .about {
     display: flex;
@@ -63,9 +67,20 @@ li:hover {
     margin-right: 40px;
 }
 
+.p-container {
+    border-left: 8px solid hsl(39, 100%, 50%);
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      #41a609, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+/*----------------------Work Section-----------------------------------------------------*/
 .work {
     display: flex;
     margin-top: 20px;
+    width: 100%;
 }
 
 .work h1 {
@@ -75,106 +90,181 @@ li:hover {
     margin-right: 60px;
 }
 
+.content {
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    filter: brightness(70%);
+    transition: transform 250ms;
+    border: 10px solid #f4bd1a;
+}
+
+.content:hover {
+    cursor: pointer;
+    filter:brightness(100%);
+    transform: translateY(-10px)
+}
+
 .work-content1 {
-    background-image: url("./img/efe-kurnaz-RnCPiXixooY-unsplash\ \(2\).jpg");
+    background-image: url("./img/samuel-regan-asante-wMkaMXTJjlQ-unsplash.jpg");
+    background-size: cover;
     height: 800px;
     width: 830px;
     margin-left: 30px;
-    border: 10px solid turquoise;
-    filter: blur(2px);
-}
-
-
-.work-content1:hover {
-    cursor: pointer;
-    filter: blur(0);
 }
 
 .work-content2 {
-    background-image: url("./img/tony-reid-PGdMhonLLZk-unsplash.jpg");
+    background-image: url("./img/Tea-Prototype.png");
     height: 120px;
     width: 400px;
     margin: 15px 0 0 30px;
-    border: 10px solid turquoise;
 }
 
 .work-content3 {
-    background-image: url("./img/tony-reid-PGdMhonLLZk-unsplash.jpg");
+    background-image: url("./img/dots.png");
     height: 120px;
     width: 400px;
     margin: 15px 0 0 30px;
-    border: 10px solid turquoise;
 }
+
 .work-content4 {
     background-image: url("./img/tony-reid-PGdMhonLLZk-unsplash.jpg");
     height: 120px;
     width: 400px;
     margin: 15px 0 0 30px;
-    border: 10px solid turquoise;
 }
+
 .work-content5 {
     background-image: url("./img/tony-reid-PGdMhonLLZk-unsplash.jpg");
     height: 120px;
     width: 400px;
     margin: 15px 0 0 30px;
-    border: 10px solid turquoise;
 }
 
 .w-container {
     display: flex;
     flex-wrap: wrap;
+    flex-shrink: 1;
     max-width: 900px;
     border-left: 8px solid hsl(39, 100%, 50%);
     border-image: 
     linear-gradient(
       to bottom, 
-      rgb(255, 0, 0), 
+      #41a609, 
       rgba(0, 0, 0, 0)
     ) 1 100%;
 }
 
-.p-container {
-    border-left: 8px solid hsl(39, 100%, 50%);
-    border-image: 
-    linear-gradient(
-      to bottom, 
-      red, 
-      rgba(0, 0, 0, 0)
-    ) 1 100%;
+/*---------------------------Hover and Transition Effects ---------------------------------------------------------------------*/
+
+#title-1 {
+    display: inline-block;
+    text-align: center;
+    border: 0px solid transparent;
+    background-color: turquoise;
+    height: 4em;
+    width: 0;
+    transition: width 0.5s, border 0.5s;
 }
 
-.contact {
-    display: flex;
-    margin-top: 60px;
-    max-width: 100%;
+#title-2, #title-3, #title-4, #title-5 {
+    display: inline-block;
+    text-align: center;
+    color:black;
+    border: 0px solid transparent;
+    background-color: turquoise;
+    height: 0;
+    width: 6em;
+    transition: height 0.5s, border 0.5s;
 }
 
-.contact h1 {
-    padding-right: 10px;
-    font-size: 50px;
-    color: #056192;
+#title-1 h5{
+    visibility: hidden;
+    opacity: 0;
+    color: black;
+    transition: visibility 0s, opacity 1s linear;
+} 
+
+#title-2 h5 {
+    visibility: hidden;
+    opacity: 0;
+    color: black;
+    transition: visibility 0s, opacity 1s linear
 }
 
-.c-container {
-    display: flex;
-    flex-direction: column;
-    border-left: 8px solid hsl(39, 100%, 50%);
-    max-width: 100%;
-    border-image: 
-    linear-gradient(
-      to bottom, 
-      red, 
-      rgba(0, 0, 0, 0)
-    ) 1 100%;
+#title-3 h5 {
+    visibility: hidden;
+    opacity: 0;
+    color: black;
+    transition: visibility 0s, opacity 1s linear
 }
 
-.c-container a {
-    margin: 0 0 15px 1em;
-    font-size: 2em;
-    text-decoration: none;
+#title-4 h5 {
+    visibility: hidden;
+    opacity: 0;
+    color: black;
+    transition: visibility 0s, opacity 1s linear
 }
 
-@media screen and (max-width: 768px) {
+#title-5 h5 {
+    visibility: hidden;
+    opacity: 0;
+    color: black;
+    transition: visibility 0s, opacity 1s linear
+}
+
+.work-content1:hover > #title-1 {
+    width: 7em;
+    border: 1px solid transparent;
+}
+
+.work-content1:hover > #title-1 h5 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.work-content2:hover > #title-2 {
+    height: 2em;
+    border: 1px solid transparent;
+}
+
+.work-content2:hover > #title-2 h5 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.work-content3:hover > #title-3 {
+    height: 2em;
+    border: 1px solid transparent;
+}
+
+.work-content3:hover > #title-3 h5 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.work-content4:hover > #title-4 {
+    height: 3em;
+    border: 1px solid transparent;
+}
+
+.work-content4:hover > #title-4 h5 {
+    visibility: visible;
+    opacity: 1;
+}
+.work-content5:hover > #title-5 {
+    height: 3em;
+    border: 1px solid transparent;
+}
+
+.work-content5:hover > #title-5 h5 {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/*--------------------------Media Query--------------------------------------------------------------------*/
+
+@media screen and (max-width: 1274px) {
     .main-container{
         margin: 5% 2% 0 2%;
     }
@@ -195,7 +285,7 @@ li:hover {
     .p-container {
         border: none;
         border-image: none;
-        border-top: 8px solid red;
+        border-top: 8px solid #41a609;
     }
 
     .p-container p {
@@ -206,21 +296,29 @@ li:hover {
         width: 100%;
         border: none;
         border-image: none;
-        border-top: 8px solid red;
+        border-top: 8px solid #41a609;
         max-width: 100%;
+        padding-top: 1%;
     }
 
-    .work-content1,
-    .work-content2,
-    .work-content3,
-    .work-content4,
-    .work-content5 {
+    .content, .content-link {
         width: 100%;
         margin: 0 0 2% 0;
     }
 
     .work-content1 {
         padding: 5% 0 0 0;
+    }
+
+    #title-1 {
+        position: absolute;
+        top: 0px;
+    }
+}
+
+@media screen and (min-width: 2250px) {
+    .about {
+        margin-right: 60%;
     }
 }
 
